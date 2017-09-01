@@ -70,10 +70,9 @@ var sessionId = $.cookie('PHPSESSID');
  var loginInfo = $.cookie('loginInfo');
  //将字符串转换成对象
  var info =loginInfo?JSON.parse(loginInfo):{};
- console.log(info);
 
 
- var tplstr = '<div class="avatar img-circle"><img src="{{tc_avatar}}"></div><h4>{{tc_name}}}</h4>';
+ var tplstr = '<div class="avatar img-circle"><img src="{{tc_avatar}}"></div><h4>{{tc_name}}</h4>';
  var html = template.render(tplstr,info);
  $('.aside .profile').html(html); 
   // $('.profile img').attr('src',info.tc_avatar);
