@@ -14,7 +14,10 @@ util.setMenu(location.pathname);
              var html = template('teacherTpl',{list:data.result});
              $('#teacherInfo').html(html);
              //绑定预览单机事件
-             $('.preview').click(function(){	
+             $('.preview').click(function(){
+                //获取当前记录ID
+             var td = $(this).closest('td');
+            var tcId = td.attr('data-tcId');	
              	//根据ID查询数据
              	$.ajax({
              		type:'get',
