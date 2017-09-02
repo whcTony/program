@@ -18,7 +18,9 @@ require.config({
 		bootstrap:'bootstrap/js/bootstrap.min',
 		common:'../js/common',
 		login:'../js/login',
-		teacherlist:'../js/teacher-list'
+		index:'../js/index',
+		teacherlist:'../js/teacher-list',
+		util:'../js/util'
 	},
 	//shim垫片，用来转换为模块化
 	shim:{
