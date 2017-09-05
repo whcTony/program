@@ -1,4 +1,4 @@
-define(['jquery','template','util'],function($,template,util){
+define(['jquery','template','util','datepicker','language'],function($,template,util){
  //设置菜单选中
  util.setMenu('/teacher/list');
  //获取编辑的讲师ID
@@ -31,7 +31,7 @@ define(['jquery','template','util'],function($,template,util){
  function submitForm(url){
      $('#teacherBtn').click(function(){
      	$.ajax({
-     		type:'post',
+     		type:'post', 
      		url:url,
      		data:$('#teacherForm').serialize(),
      		dataType:'json',
