@@ -25,7 +25,8 @@ require.config({
 		index:'../js/index',
 		teacherlist:'../js/teacher-list',
 		teacheradd:'../js/teacher-add',
-		util:'../js/util'
+		util:'../js/util',
+		settings:'../js/settings'
 	},
 	//shim垫片，用来转换为模块化
 	shim:{
