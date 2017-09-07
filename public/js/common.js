@@ -38,11 +38,15 @@
   
 // });
 
-define(['jquery','template','cookie'], function($,template){
+define(['jquery','template','nprogress','cookie'], function($,template,NProgress){
+   //进度条
+     NProgress.start();
+     NProgress.done();
+
   // 控制左侧菜单的折叠和展开
-//   $('.navs ul').prev('a').on('click', function() {
-//     $(this).next().slideToggle();
-//   });
+  $('.navs ul').prev('a').on('click', function() {
+    $(this).next().slideToggle();
+  });
 
 //实现退出功能
 $('#logoutBtn').click(function(){
