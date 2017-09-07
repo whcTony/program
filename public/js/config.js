@@ -32,7 +32,9 @@ require.config({
 		util:'../js/util',
 		settings:'../js/settings',
 		state:'../js/state',
-		courselist:'../js/course-list'
+		courselist:'../js/course-list',
+		courseadd:'../js/course-add',
+		coursebasic:'../js/course-basic'
 	},
 	//shim垫片，用来转换为模块化
 	shim:{
